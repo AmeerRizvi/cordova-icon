@@ -24,7 +24,7 @@ settings.OLD_XCODE_PATH = argv['xcode-old'] || false;
 var getPlatforms = function (projectName) {
   var deferred = Q.defer();
   var platforms = [];
-  var xcodeFolder = '/Images.xcassets/AppIcon.appiconset/';
+  var xcodeFolder = '/Assets.xcassets/AppIcon.appiconset/';
 
   if (settings.OLD_XCODE_PATH) {
     xcodeFolder = '/Resources/icons/';
@@ -56,14 +56,14 @@ var getPlatforms = function (projectName) {
       { name: 'icon-small@3x.png',       size : 87   },
       { name: 'icon.png',                size : 57   },
       { name: 'icon@2x.png',             size : 114  },
-      { name: 'AppIcon24x24@2x.png',     size : 48   },
-      { name: 'AppIcon27.5x27.5@2x.png', size : 55   },
-      { name: 'AppIcon29x29@2x.png',     size : 58   },
-      { name: 'AppIcon29x29@3x.png',     size : 87   },
-      { name: 'AppIcon40x40@2x.png',     size : 80   },
-      { name: 'AppIcon44x44@2x.png',     size : 88   },
-      { name: 'AppIcon86x86@2x.png',     size : 172  },
-      { name: 'AppIcon98x98@2x.png',     size : 196  }
+      { name: 'icon-24@2x.png',     size : 48   },
+      { name: 'icon-27.5@2x.png', size : 55   },
+      { name: 'icon-29@2x.png',     size : 58   },
+      { name: 'icon-29@3x.png',     size : 87   },
+      { name: 'icon-40@2x.png',     size : 80   },
+      { name: 'icon-44@2x.png',     size : 88   },
+      { name: 'icon-86@2x.png',     size : 172  },
+      { name: 'icon-98@2x.png',     size : 196  }
     ]
   });
   platforms.push({
